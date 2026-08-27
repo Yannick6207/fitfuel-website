@@ -44,6 +44,15 @@ $navItems = [
             </button>
 
             <div class="main-nav" id="main-nav">
+                <button class="menu-close" type="button" aria-label="Menu sluiten">
+                    <span aria-hidden="true"></span>
+                </button>
+
+                <a class="brand mobile-menu-brand" href="index.php" aria-label="FitFuel home">
+                    <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+                    <span>FITFUEL</span>
+                </a>
+
                 <ul class="nav-list">
                     <?php foreach ($navItems as $file => $label): ?>
                         <li>
@@ -58,5 +67,6 @@ $navItems = [
             <a class="button button-small header-cta" href="maaltijden.php">Bestel nu</a>
         </nav>
     </header>
+    <button class="menu-overlay" type="button" aria-label="Menu sluiten" tabindex="-1"></button>
 
     <main>

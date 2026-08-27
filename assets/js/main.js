@@ -1,6 +1,44 @@
 const toggle=document.querySelector('.menu-toggle');
 const nav=document.querySelector('.main-nav');
-toggle?.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open');document.body.classList.toggle('menu-open')});
+const menuClose=document.querySelector('.menu-close');
+const menuOverlay=document.querySelector('.menu-overlay');
+
+function openMobileMenu(){
+ if(!toggle||!nav||!menuOverlay)return;
+ toggle.setAttribute('aria-expanded','true');
+ toggle.setAttribute('aria-label','Menu sluiten');
+ toggle.classList.add('is-hidden');
+ nav.classList.add('open');
+ menuOverlay.classList.add('show');
+ document.body.classList.add('menu-open');
+ menuClose?.focus();
+}
+
+function closeMobileMenu(){
+ if(!toggle||!nav||!menuOverlay)return;
+ const wasOpen=nav.classList.contains('open');
+ toggle.setAttribute('aria-expanded','false');
+ toggle.setAttribute('aria-label','Menu openen');
+ toggle.classList.remove('is-hidden');
+ nav.classList.remove('open');
+ menuOverlay.classList.remove('show');
+ document.body.classList.remove('menu-open');
+ if(wasOpen)toggle.focus();
+}
+
+toggle?.addEventListener('click',()=>{
+ if(nav?.classList.contains('open'))closeMobileMenu();
+ else openMobileMenu();
+});
+menuClose?.addEventListener('click',closeMobileMenu);
+menuOverlay?.addEventListener('click',closeMobileMenu);
+nav?.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMobileMenu));
+document.addEventListener('keydown',event=>{
+ if(event.key==='Escape'&&nav?.classList.contains('open'))closeMobileMenu();
+});
+window.addEventListener('resize',()=>{
+ if(window.innerWidth>1000&&nav?.classList.contains('open'))closeMobileMenu();
+});
 document.querySelectorAll('[data-filter]').forEach(button=>{button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(item=>item.classList.remove('active'));button.classList.add('active');document.querySelectorAll('.meal-card').forEach(card=>{card.hidden=!card.dataset.category.includes(button.dataset.filter)})})});
 document.querySelectorAll('.newsletter form, .contact-form').forEach(form=>{form.addEventListener('submit',event=>{event.preventDefault();const button=form.querySelector('button');button.textContent='Bedankt!';button.disabled=true})});
 
