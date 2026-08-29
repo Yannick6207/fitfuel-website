@@ -234,8 +234,8 @@ h2 em{
     width: 125px;
     height: 125px;
     position: absolute;
-    bottom: -95px;
-    left: 63%;
+    bottom: -75px;
+    left: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,8 +272,24 @@ h2 em{
     align-items: center;
     gap: 13px;
 }
-.trust-grid b{
-    font-size: 27px;
+.trust-grid .trust-icon{
+    width: 26px;
+    height: 26px;
+    flex: 0 0 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+.trust-icon svg{
+    width: 26px;
+    height: 26px;
+    display: block;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 .trust-grid span{
     color: #656965;

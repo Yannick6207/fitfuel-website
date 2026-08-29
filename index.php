@@ -33,10 +33,30 @@ require 'header.php';
 
 <section class="trust-strip" aria-label="Voordelen van FitFuel">
     <div class="container trust-grid">
-        <article><b>&harr;</b><span><strong>Hoge eiwitwaarde</strong>Voor spieropbouw en herstel</span></article>
-        <article><b>&#9827;</b><span><strong>100% vers</strong>Dagelijks vers bereid</span></article>
-        <article><b>&#9687;</b><span><strong>Tijd besparen</strong>Binnen 2 minuten klaar</span></article>
-        <article><b>&#9649;</b><span><strong>Flexibel &amp; makkelijk</strong>Wij bezorgen, jij geniet</span></article>
+        <article>
+            <span class="trust-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z"/><path d="m2.5 21.5 1.4-1.4"/><path d="m20.1 3.9 1.4-1.4"/><path d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z"/><path d="m9.6 14.4 4.8-4.8"/></svg>
+            </span>
+            <span><strong>Hoge eiwitwaarde</strong>Voor spieropbouw en herstel</span>
+        </article>
+        <article>
+            <span class="trust-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg>
+            </span>
+            <span><strong>100% vers</strong>Dagelijks vers bereid</span>
+        </article>
+        <article>
+            <span class="trust-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 6v6h4"/><circle cx="12" cy="12" r="10"/></svg>
+            </span>
+            <span><strong>Tijd besparen</strong>Binnen 2 minuten klaar</span>
+        </article>
+        <article>
+            <span class="trust-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22V12"/><path d="m16 17 2 2 4-4"/><path d="M21 11.127V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.729l7 4a2 2 0 0 0 2 .001l1.32-.753"/><path d="M3.29 7 12 12l8.71-5"/><path d="m7.5 4.27 8.997 5.148"/></svg>
+            </span>
+            <span><strong>Flexibel &amp; makkelijk</strong>Wij bezorgen, jij geniet</span>
+        </article>
     </div>
 </section>
 
