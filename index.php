@@ -19,7 +19,7 @@ require 'header.php';
 
             <div class="button-row">
                 <a class="button" href="maaltijden.php">Bekijk maaltijden</a>
-                <a class="button button-outline" href="#doelen">Stel je pakket samen</a>
+                <a class="button button-outline" href="/maaltijden.php">Stel je pakket samen</a>
             </div>
         </div>
 
