@@ -68,20 +68,23 @@ require 'header.php';
         </header>
 
         <div class="goal-grid">
-            <article class="goal-card crop-1">
+            <article class="goal-card">
+                <img class="goal-card__image" src="assets/images/kip-teriyaki-v2.png" alt="Kip teriyaki met rijst en groenten" width="768" height="768" loading="lazy">
                 <h3>Afvallen</h3>
                 <p>Caloriearm en gebalanceerd voor vetverlies.</p>
-                <a href="maaltijden.php">Bekijk &rarr;</a>
+                <a href="maaltijden.php?filter=afvallen">Bekijk &rarr;</a>
             </article>
-            <article class="goal-card crop-2">
+            <article class="goal-card">
+                <img class="goal-card__image" src="assets/images/runderreepjes-v2.png" alt="Runderreepjes met aardappelen en groenten" width="768" height="768" loading="lazy">
                 <h3>Spieropbouw</h3>
                 <p>Rijk aan eiwitten voor maximale resultaten.</p>
-                <a href="maaltijden.php">Bekijk &rarr;</a>
+                <a href="maaltijden.php?filter=spieropbouw">Bekijk &rarr;</a>
             </article>
-            <article class="goal-card crop-3">
+            <article class="goal-card">
+                <img class="goal-card__image" src="assets/images/zalm-citroen-v2.png" alt="Zalm met quinoa en sperziebonen" width="768" height="768" loading="lazy">
                 <h3>Onderhoud</h3>
                 <p>Gezond, gevarieerd en perfect in balans.</p>
-                <a href="maaltijden.php">Bekijk &rarr;</a>
+                <a href="maaltijden.php?filter=onderhoud">Bekijk &rarr;</a>
             </article>
         </div>
 
